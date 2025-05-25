@@ -40,7 +40,7 @@ public class UtilService {
 
     public double getValuePerUnit(RegularProduct regularProduct) {
         double normalizedQuantity = normalizeQuantity(regularProduct.getPackage_unit(), regularProduct.getPackage_quantity());
-        return regularProduct.getPrice() * normalizedQuantity;
+        return regularProduct.getPrice() /normalizedQuantity;
     }
 
 
